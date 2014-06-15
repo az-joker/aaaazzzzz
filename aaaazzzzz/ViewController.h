@@ -13,7 +13,12 @@
 {
     IBOutlet UITextField *name1;
     IBOutlet UITextField *name2;
+    IBOutlet UILabel *name3;
+    IBOutlet UILabel *pass;
+    
+    
 }
 -(IBAction)save;
+-(IBAction)load;
 
 @end

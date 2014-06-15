@@ -30,18 +30,57 @@
     
     
 }
+-(IBAction)load{
+    //Userに保存されているデータを全部持ってくる
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // データの呼び出しに成功!
+            //呼び出したデータは、objects
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            //TestObjectに入ってるデータを表示する
+            //Objectsのデータをひとつづつ呼び出す
+            for (PFObject *object in objects) {
+                name3.text =object[@"username"];
+                NSLog(@"%@", object.objectId);
+                NSLog(@"%@", object[@"username"]);
+            }
+        } else {
+            // データの呼び出しに失敗
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        } }];
 
+}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(IBAction)loadParse:(id)sender{
+-(IBAction)saveparse:(id)sender{
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // データの呼び出しに成功!
+        
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            //TestObjectに入ってるデータを表示する
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+                NSLog(@"%@", object[@"username"]);
+            }
+        } else {
+            // データの呼び出しに失敗
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        } }];
+    
+}
+ -(IBAction)loadParse:(id)sender{
     //読み込み
     PFQuery *query = [PFQuery queryWithClassName:@"User"];
     //[query whereKey:@"password" equalTo:@"test"];
+    
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
@@ -55,6 +94,8 @@
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+
+    
 }
 @end
 
