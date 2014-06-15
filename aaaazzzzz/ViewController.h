@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+<UITextFieldDelegate, UIGestureRecognizerDelegate>
+{
+    IBOutlet UITextField *name1;
+    IBOutlet UITextField *name2;
+}
+-(IBAction)save;
 
 @end
