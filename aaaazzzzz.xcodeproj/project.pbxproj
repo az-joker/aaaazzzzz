@@ -15,6 +15,7 @@
 		A750E01119288A66009597AB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A750E01019288A66009597AB /* libz.1.1.3.dylib */; };
 		A750E01319288A71009597AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A750E01219288A71009597AB /* Security.framework */; };
 		A750E01519288A7E009597AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A750E01419288A7E009597AB /* QuartzCore.framework */; };
+		A78CFD52195FF5AA0020EE68 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78CFD51195FF5AA0020EE68 /* QuestionViewController.m */; };
 		A7EC629B1928865900E012EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EC629A1928865900E012EC /* Foundation.framework */; };
 		A7EC629D1928865900E012EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EC629C1928865900E012EC /* CoreGraphics.framework */; };
 		A7EC629F1928865900E012EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EC629E1928865900E012EC /* UIKit.framework */; };
@@ -50,6 +51,8 @@
 		A750E01019288A66009597AB /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		A750E01219288A71009597AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A750E01419288A7E009597AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A78CFD50195FF5AA0020EE68 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		A78CFD51195FF5AA0020EE68 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		A7EC62971928865900E012EC /* aaaazzzzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aaaazzzzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7EC629A1928865900E012EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A7EC629C1928865900E012EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 				A7EC62AC1928865A00E012EC /* Main.storyboard */,
 				A7EC62AF1928865A00E012EC /* ViewController.h */,
 				A7EC62B01928865A00E012EC /* ViewController.m */,
+				A78CFD50195FF5AA0020EE68 /* QuestionViewController.h */,
+				A78CFD51195FF5AA0020EE68 /* QuestionViewController.m */,
 				A7EC62B21928865A00E012EC /* Images.xcassets */,
 				A7EC62A11928865900E012EC /* Supporting Files */,
 			);
@@ -283,6 +288,7 @@
 			files = (
 				A7EC62B11928865A00E012EC /* ViewController.m in Sources */,
 				A7EC62AB1928865A00E012EC /* AppDelegate.m in Sources */,
+				A78CFD52195FF5AA0020EE68 /* QuestionViewController.m in Sources */,
 				A7EC62A71928865900E012EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
