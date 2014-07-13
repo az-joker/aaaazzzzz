@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73CBC161972167700B92B61 /* answerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73CBC151972167700B92B61 /* answerViewController.m */; };
 		A750E007192889C4009597AB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A750E006192889C4009597AB /* Parse.framework */; };
 		A750E00919288A25009597AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A750E00819288A25009597AB /* AudioToolbox.framework */; };
 		A750E00B19288A35009597AB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A750E00A19288A35009597AB /* CFNetwork.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A73CBC141972167700B92B61 /* answerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = answerViewController.h; sourceTree = "<group>"; };
+		A73CBC151972167700B92B61 /* answerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = answerViewController.m; sourceTree = "<group>"; };
 		A750E006192889C4009597AB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A750E00819288A25009597AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A750E00A19288A35009597AB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -152,6 +155,8 @@
 				A7EC62AC1928865A00E012EC /* Main.storyboard */,
 				A7EC62AF1928865A00E012EC /* ViewController.h */,
 				A7EC62B01928865A00E012EC /* ViewController.m */,
+				A73CBC141972167700B92B61 /* answerViewController.h */,
+				A73CBC151972167700B92B61 /* answerViewController.m */,
 				A78CFD50195FF5AA0020EE68 /* QuestionViewController.h */,
 				A78CFD51195FF5AA0020EE68 /* QuestionViewController.m */,
 				A7EC62B21928865A00E012EC /* Images.xcassets */,
@@ -290,6 +295,7 @@
 				A7EC62AB1928865A00E012EC /* AppDelegate.m in Sources */,
 				A78CFD52195FF5AA0020EE68 /* QuestionViewController.m in Sources */,
 				A7EC62A71928865900E012EC /* main.m in Sources */,
+				A73CBC161972167700B92B61 /* answerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
